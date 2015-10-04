@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>7th Son - questionJS Prototype 0</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="jumbotron top-banner"></div>
+        <div class="container">
+          <div class="row pull-up">
+            <!-- Settings -->
+            <div class="col-md-3">
+              <div class="section">
+                <p class="title center">Settings</p>
+                <p>Filter by</p>
+                <div class="btn-group">
+                  <div class="btn btn-default">Like</div>
+                  <div class="btn btn-default">Newest</div>
+                  <div class="btn btn-default">Comment</div>
+                </div>
+              </div>
+            </div>
+            <!-- Main -->
+            <div class="col-md-6">
+              <div class="section">
+                <div class="icon"><i class="glyphicon glyphicon-camera"></i></div>
+                <input class="q-input" placeholder="| Enter Title" id="one">
+                <div class="icon"><i class="glyphicon glyphicon-search"></i></div>
+                <input class="q-input" placeholder="| Ask A Question" id="two">
+                <div id="questionList"></div>
+              </div>
+            </div>
+            <!-- Feed -->
+            <div class="col-md-3">
+              <div class="section">
+                <p class="title center">Feed</p>
+                <div id="questionListTop"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="row">
+        		<div class="col-md-12">
+        			<div class="col-md-8">
+        				<a href="#">Terms of Service</a>
+        				<a href="#">Privacy</a>
+        				<a href="#">Security</a>
+        			</div>
+        			<div class="col-md-4">
+        				<p class="muted pull-right">© 2015 7th Son. All rights reserved</p>
+        			</div>
+        		</div>
+      	</div>
+      </div>
+    </body>
+    <script id="questionTemplate" type="text/x-handlebars-template">
+      <div class="question">
+        <div class="title">{{title}}</div>
+        <div class="body">
+          {{{body}}}
+        </div>
+        <div class="questionFooter">
+          <i class="glyphicon glyphicon-comment"></i>123
+          <i class="glyphicon glyphicon-thumbs-up"></i>321
+          <i class="glyphicon glyphicon-thumbs-down"></i>32
+        </div>
+      </div>
+    </script>
+    <script id="questionTemplateTop" type="text/x-handlebars-template">
+      <div class="question">
+        <div class="body">
+          {{{body}}}
+        </div>
+        <div class="questionFooter">
+        </div>
+      </div>
+    </script>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src="js/handlebars-v4.0.2.js"></script>
+    <script type="text/javascript" src="js/renderQuestions.js"></script>
+</html>
