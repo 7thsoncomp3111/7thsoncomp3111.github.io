@@ -1,3 +1,11 @@
+/* Bootstrap fix
+Ref: http://stackoverflow.com/questions/19432787/bootstrap-3-0-0-adding-extra-space-on-row-class
+*/
+.row {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .center{
   text-align: center;
 }
@@ -66,11 +74,19 @@ input:focus{
   border: none;
 }
 
+.question a:hover, .question a:focus{
+  text-decoration: none;
+}
+
 .question .title{
   background: #fff;
   color: #c3d5db;
   font-weight: bold;
   font-size: 1em;
+}
+
+.question .title:hover{
+  color: #608996;
 }
 
 .question .body img{
@@ -82,10 +98,15 @@ input:focus{
   padding: 10px;
 }
 
+.questionFooter.left{
+  float: left;
+}
+
 .footer{
   background: url('../images/abstract-cartoon-cloud-art-backgrounds.jpg') no-repeat;
   background-position: center bottom;
   background-size: 1280px;
+  padding: 5px;
 }
 
 .footer a{

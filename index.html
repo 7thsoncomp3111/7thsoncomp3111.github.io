@@ -68,7 +68,7 @@
     </body>
     <script id="questionTemplate" type="text/x-handlebars-template">
       <div class="question">
-        <div class="title">{{title}}</div>
+        <a href="" data-toggle="modal" data-target="#myModal{{index}}"><div class="title">{{title}}</div></a>
         <div class="body">
           {{{body}}}
         </div>
@@ -76,6 +76,30 @@
           <i class="glyphicon glyphicon-comment"></i>123
           <i class="glyphicon glyphicon-thumbs-up"></i>321
           <i class="glyphicon glyphicon-thumbs-down"></i>32
+        </div>
+      </div>
+      <div class="modal fade" id="myModal{{index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="title">{{title}}</div></a>
+            </div>
+            <div class="modal-body">
+              <div class="question">
+                <div class="body">
+                  {{{body}}}
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="questionFooter left">
+                <i class="glyphicon glyphicon-comment"></i>123
+                <i class="glyphicon glyphicon-thumbs-up"></i>321
+                <i class="glyphicon glyphicon-thumbs-down"></i>32
+              </div>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
       </div>
     </script>
@@ -88,7 +112,8 @@
         </div>
       </div>
     </script>
-    <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.min.js'></script>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script type='text/javascript' src='js/bootstrap.min.js'></script>
     <script type="text/javascript" src="js/handlebars-v4.0.2.js"></script>
     <script type="text/javascript" src="js/renderQuestions.js"></script>
 </html>

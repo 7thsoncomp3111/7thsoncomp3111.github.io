@@ -11,8 +11,10 @@ var context = [
               ];
 var html;
 for(var i=0; i<context.length; i++){
+  context[i].index = i;
   html = template(context[i]);
   $("#questionList").append(html);
+
 }
 // Pseudo: sort posts with an algorithm
 html = feedTemplate(context[context.length-1]);
