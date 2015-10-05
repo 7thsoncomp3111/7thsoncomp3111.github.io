@@ -26,9 +26,9 @@
                 <p class="title center">Settings</p>
                 <p>Filter by</p>
                 <div class="btn-group">
-                  <div class="btn btn-default">Like</div>
-                  <div class="btn btn-default">Newest</div>
-                  <div class="btn btn-default">Comment</div>
+                  <div class="btn btn-default">Date</div>
+                  <div class="btn btn-default">Activity</div>
+                  <div class="btn btn-default">Rating</div>
                 </div>
               </div>
             </div>
@@ -73,9 +73,12 @@
           {{{body}}}
         </div>
         <div class="questionFooter">
-          <i class="glyphicon glyphicon-comment"></i>123
-          <i class="glyphicon glyphicon-thumbs-up"></i>321
-          <i class="glyphicon glyphicon-thumbs-down"></i>32
+          <div class="interactive">
+          <i class="glyphicon glyphicon-comment"> 123</i>
+          <i class="glyphicon glyphicon-thumbs-up"> 321</i>
+          <i class="glyphicon glyphicon-thumbs-down"> 32</i>
+          </div>
+          <div class="time right">{{time}}</div>
         </div>
       </div>
       <div class="modal fade" id="myModal{{index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -90,14 +93,59 @@
                   {{{body}}}
                 </div>
               </div>
+              <div class="comments">
+                <div class="comment level0">
+                  So cool!
+                </div>
+                <div class="comment level1">
+                  Nice!
+                </div>
+                <div class="comment level2">
+                  Wow!
+                </div>
+                <div class="comment level1">
+                  So nice!
+                </div>
+                <div class="comment level0">
+                  Look at that.
+                </div>
+                <div class="comment level1">
+                  So Good!
+                </div>
+                <div class="comment level2">
+                  Wow!
+                </div>
+                <div class="comment level2">
+                  So cool!
+                </div>
+                <div class="comment level0">
+                  Nice!
+                </div>
+                <div class="comment level0">
+                  Good.
+                </div>
+                <div class="comment level1">
+                  Wow!
+                </div>
+                <div class="comment level1">
+                  So good!
+                </div>
+                <div class="comment level1">
+                  Nice!
+                </div>
+                <div class="comment level2">
+                  Cool!
+                </div>
+                <div class="comment level2">
+                  Yay!
+                </div>
+                <div class="comment level0">
+                  Wow.
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
-              <div class="questionFooter left">
-                <i class="glyphicon glyphicon-comment"></i>123
-                <i class="glyphicon glyphicon-thumbs-up"></i>321
-                <i class="glyphicon glyphicon-thumbs-down"></i>32
-              </div>
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default right" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

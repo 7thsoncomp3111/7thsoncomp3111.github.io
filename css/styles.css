@@ -66,8 +66,12 @@ input:focus{
 .question{
   margin: 10px;
   padding: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   border-bottom: 2px solid #e7e7e7;
+}
+
+.question.now{
+  background: #ffff99;
 }
 
 .question:last-child{
@@ -79,7 +83,6 @@ input:focus{
 }
 
 .question .title{
-  background: #fff;
   color: #c3d5db;
   font-weight: bold;
   font-size: 1em;
@@ -96,10 +99,73 @@ input:focus{
 .questionFooter{
   float: right;
   padding: 10px;
+  width: auto;
+  pointer-events: none;
 }
 
-.questionFooter.left{
+.questionFooter .interactive{
+  background-color: #c3d5db;
+  color: #fff;
+  border-radius: 0.2em;
+  padding: 2px;
+  left: 0;
+}
+
+.questionFooter .interactive i{
+  padding: 4px;
+}
+
+.comments .comment{
+  border-bottom: 1px solid #e7e7e7;
+  padding: 1em;
+}
+
+.comment .voting{
+  float: right;
+  font-size: 2em;
+}
+
+.comment .voting a{
+    color: #444;
+}
+
+.comment .voting .up:hover{
+  color: green;
+  text-decoration: none;
+}
+
+.comment .voting .down:hover{
+  color: red;
+  text-decoration: none;
+}
+
+.comment.level0{
+  padding-left: 1em;
+  background: #999;
+}
+
+.comment.level1{
+  padding-left: 2em;
+  background: #ccc;
+}
+
+.comment.level2{
+  padding-left: 3em;
+  background: #eee;
+}
+
+.left{
   float: left;
+}
+
+.right{
+  float: right;
+}
+
+.time{
+  display: inline-block;
+  color: #777;
+  font-style: italic;
 }
 
 .footer{
