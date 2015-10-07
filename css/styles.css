@@ -196,3 +196,7 @@ input:focus{
   padding: 5px;
   font-size: 2em;
 }
+
+.subscribe-yellow{
+  color: #f0ad4c;
+}
