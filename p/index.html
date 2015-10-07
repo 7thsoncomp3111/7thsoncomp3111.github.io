@@ -77,26 +77,40 @@
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Tools</h2>
+						<img src="resource/ss/github.PNG" style="width:33%;" class="vtx" onclick="bigImg(this)"/>
+						<img src="resource/ss/slack.PNG" style="width:33%;" class="vtx" onclick="bigImg(this)" />
+					    <img src="resource/ss/trello.PNG" style="width:33%;" class="vtx" onclick="bigImg(this)" />
+						<script type="text/javascript">
+						var a = 0;
+						function bigImg(x) {
+							if(a ==0){
+						    //x.style.height = "64px";
+						    x.style.width = "100%";
+							x.style.height = "100%";
+							x.style.position = "absolute";
+							x.style.top = "0px";
+							x.style.left = "0px";
+							a = 1;
+							} else {
+								x.style.width = "33%";
+							x.style.position = "";
+							a=0;
+							}							
+						}
+						
+						function normalImg(x) {
+						   
+						    
+						}
+						</script>
+						</script>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h2>Estimation Table</h2>
+						<img src="resource/ss/EstimationTable.PNG" style:"clear"/>
 					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					
 				</section>
 
 				<section>
