@@ -65,7 +65,7 @@ input:focus{
 
 .question{
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   padding-bottom: 60px;
   border-bottom: 2px solid #e7e7e7;
 }
@@ -100,7 +100,6 @@ input:focus{
   float: right;
   padding: 10px;
   width: auto;
-  pointer-events: none;
 }
 
 .questionFooter .interactive{
@@ -109,6 +108,10 @@ input:focus{
   border-radius: 0.2em;
   padding: 2px;
   left: 0;
+}
+
+.questionFooter .interactive:hover{
+  background-color: #608996;
 }
 
 .questionFooter .interactive i{
@@ -140,17 +143,17 @@ input:focus{
 }
 
 .comment.level0{
-  padding-left: 1em;
+  margin-left: 1em;
   background: #999;
 }
 
 .comment.level1{
-  padding-left: 2em;
+  margin-left: 3em;
   background: #ccc;
 }
 
 .comment.level2{
-  padding-left: 3em;
+  margin-left: 5em;
   background: #eee;
 }
 
@@ -178,4 +181,18 @@ input:focus{
 .footer a{
   color: #fff;
   margin-right: 10px;
+}
+
+.send-button{
+  border-left: 2px solid #999;
+  height: 85px;
+}
+
+.send-button:hover{
+  background: #e7e7e7;
+}
+
+.send-button .icon{
+  padding: 5px;
+  font-size: 2em;
 }
