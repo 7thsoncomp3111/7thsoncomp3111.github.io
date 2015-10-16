@@ -15,11 +15,11 @@ Ref: http://stackoverflow.com/questions/19432787/bootstrap-3-0-0-adding-extra-sp
   background-position: center top;
   background-size: 1280px;
   height: 500px;
-  margin-top: -200px;
+  margin-top: -280px;
 }
 
 .pull-up{
-  margin-top: -75px;
+  margin-top: -155px;
 }
 
 .section{
@@ -66,7 +66,6 @@ input:focus{
 .question{
   margin: 10px;
   padding: 15px;
-  padding-bottom: 70px;
   border-bottom: 2px solid #e7e7e7;
 }
 
@@ -97,17 +96,27 @@ input:focus{
 }
 
 .questionFooter{
-  float: right;
-  padding: 10px;
+  margin-left: 30%;
+  padding-bottom: 5px;
   width: auto;
 }
 
 .questionFooter .interactive{
-  background-color: #c3d5db;
+  background: #c3d5db;
   color: #fff;
   border-radius: 0.2em;
-  padding: 2px;
-  left: 0;
+}
+
+.questionFooter .interactive .subscribe-btn{
+  background-image: none;
+  border: none;
+  background-color: #f0ad4c;
+  padding-top: 7px;
+  border-radius: 0;
+}
+
+.questionFooter .interactive .subscribe-btn:hover{
+  background-color: #eb9316;
 }
 
 .questionFooter .interactive:hover{
@@ -115,11 +124,21 @@ input:focus{
 }
 
 .questionFooter .interactive i{
-  padding: 4px;
+  padding: 5px;
+  width: 55px;
+}
+
+.questionFooter .interactive i::before{
+  padding-right: 5px;
+}
+
+.comments{
+  margin: 15px;
 }
 
 .comments .comment{
-  border-bottom: 1px solid #e7e7e7;
+  margin: 0.5em;
+  border-radius: 0.5em;
   padding: 1em;
 }
 

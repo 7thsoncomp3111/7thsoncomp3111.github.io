@@ -82,10 +82,11 @@
         </div>
         <div class="questionFooter">
           <div class="interactive">
-          <div class="btn btn-sm btn-warning" data-toggle="modal" data-target="#myModalsubs{{index}}">Subscribe</div>
-          <i class="glyphicon glyphicon-comment"> 123</i>
-          <i class="glyphicon glyphicon-thumbs-up"> 321</i>
-          <i class="glyphicon glyphicon-thumbs-down"> 32</i>
+          <div class="btn btn-sm btn-warning subscribe-btn" data-toggle="modal" data-target="#myModalsubs{{index}}">Subscribe</div>
+          <i class="glyphicon glyphicon-comment">{{replies}}</i>
+          <i class="glyphicon glyphicon-thumbs-up">{{up}}</i>
+          <i class="glyphicon glyphicon-thumbs-down">{{down}}</i>
+          <i class="glyphicon glyphicon-retweet">{{activity}}</i>
           </div>
           <div class="time right">{{time}}</div>
         </div>
@@ -116,69 +117,13 @@
                 </div>
               </div>
               <div class="comments">
-                <div class="comment level0">
-                  So cool!
-                </div>
-                <div class="comment level1">
-                  Nice!
-                </div>
-                <div class="comment level2">
-                  Wow!
-                </div>
-                <div class="comment level1">
-                  So nice!
-                </div>
-                <div class="comment level0">
-                  Look at that.
-                </div>
-                <div class="comment level1">
-                  So Good!
-                </div>
-                <div class="comment level2">
-                  Wow!
-                </div>
-                <div class="comment level2">
-                  So cool!
-                </div>
-                <div class="comment level0">
-                  Nice!
-                </div>
-                <div class="comment level0">
-                  Good.
-                </div>
-                <div class="comment level1">
-                  Wow!
-                </div>
-                <div class="comment level1">
-                  So good!
-                </div>
-                <div class="comment level1">
-                  Nice!
-                </div>
-                <div class="comment level2">
-                  Cool!
-                </div>
-                <div class="comment level2">
-                  Yay!
-                </div>
-                <div class="comment level0">
-                  Wow.
-                </div>
+                {{{comments}}}
               </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default right" data-dismiss="modal">Close</button>
             </div>
           </div>
-        </div>
-      </div>
-    </script>
-    <script id="questionTemplateTop" type="text/x-handlebars-template">
-      <div class="question">
-        <div class="body">
-          {{{body}}}
-        </div>
-        <div class="questionFooter">
         </div>
       </div>
     </script>
