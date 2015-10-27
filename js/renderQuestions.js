@@ -76,10 +76,10 @@ genContexts();
 
 // Sort posts by time
 function compare_time(a,b) {
-  return a.time-b.time;
+  return a-b;
 }
 
-context.sort(compare_time);
+//context.sort(compare_time);
 
 for(var i=0; i<context.length; i++){
   context[i].index = i;
@@ -87,7 +87,8 @@ for(var i=0; i<context.length; i++){
   context[i].down = genNum()*genNum()*genNum();
   context[i].comments = genComments();
   context[i].replies = countTags(context[i].comments,'div');
-  context[i].activity = Math.round((context[i].up-context[i].down)*0.3 + context[i].replies*0.7);
+  context[i].views = genNum()*genNum();
+  context[i].activity = Math.round((context[i].up-context[i].down)*0.1 + context[i].replies*0.45 + context[i].views*0.45);
   html = template(context[i]);
   if(context[i].time.indexOf("now")!=-1){
     html = html.replace("question","question now");
@@ -96,12 +97,12 @@ for(var i=0; i<context.length; i++){
 }
 // Sort posts by activity
 function compare_activity(a,b) {
-  return a.activity-b.activity;
+  return parseInt(b.activity)-parseInt(a.activity);
 }
 
 context.sort(compare_activity);
 for(var i=0; i<context.length; i++){
-    html = '<div class="question"><div class="body">'+context[i].body+'</div></div>';
+    html = '<div class="question"><div class="body">'+context[i].body+'<p><strong>Activity:</strong> '+context[i].activity+'</p>'+'</div></div>';
     $("#questionListTop").append(html);
 }
 

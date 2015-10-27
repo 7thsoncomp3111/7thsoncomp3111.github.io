@@ -17,14 +17,13 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="jumbotron top-banner"></div>
+        <div class="top-banner"></div>
         <div class="container">
           <div class="row pull-up">
             <!-- Settings -->
             <div class="col-md-3">
               <div class="section">
                 <p class="title center">Settings</p>
-                <p>Filter by</p>
                 <div class="btn-group">
                   <div class="btn btn-sm btn-default active">Activity</div>
                   <div class="btn btn-sm btn-default">Date</div>
@@ -47,8 +46,8 @@
                     <div class="icon"><i class="glyphicon glyphicon-send"></i></div>
                   </div>
                 </div>
-                <div id="questionList"></div>
               </div>
+              <div id="questionList"></div>
             </div>
             <!-- Feed -->
             <div class="col-md-3">
@@ -75,7 +74,7 @@
       </div>
     </body>
     <script id="questionTemplate" type="text/x-handlebars-template">
-      <div class="question">
+      <div class="section question">
         <a href="" data-toggle="modal" data-target="#myModal{{index}}"><div class="title">{{title}}</div></a>
         <div class="body">
           {{{body}}}

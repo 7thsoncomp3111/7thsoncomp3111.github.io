@@ -1,6 +1,12 @@
 /* Bootstrap fix
 Ref: http://stackoverflow.com/questions/19432787/bootstrap-3-0-0-adding-extra-space-on-row-class
 */
+.container{
+  background: url('../images/quake.jpg');
+  background-position: center bottom;
+  width: 100%;
+}
+
 .row {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -13,24 +19,24 @@ Ref: http://stackoverflow.com/questions/19432787/bootstrap-3-0-0-adding-extra-sp
 .top-banner{
   background: url('../images/abstract-cartoon-cloud-art-backgrounds.jpg') no-repeat;
   background-position: center top;
-  background-size: 1280px;
-  height: 500px;
-  margin-top: -280px;
+  height: 400px;
+  padding: 0;
+  margin-top: -270px;
 }
 
 .pull-up{
-  margin-top: -155px;
+  margin-top: -105px;
 }
 
 .section{
   display:inline-block;
   margin: 10px;
-  padding: 20px;
+  padding: 15px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   width: 100%;
-  min-height: 300px;
   border-bottom: 5px solid #e7e7e7;
+  min-height: 130px;
 }
 
 .section .title{
