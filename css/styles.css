@@ -94,7 +94,7 @@ input:focus{
 }
 
 .question .title:hover{
-  color: #608996;
+  color: #6495a4;
 }
 
 .question .body img{
@@ -116,7 +116,7 @@ input:focus{
 .questionFooter .interactive .subscribe-btn{
   background-image: none;
   border: none;
-  background-color: #f0ad4c;
+  background-color: #7d9faa;
   padding-top: 7px;
   border-radius: 0;
 }
@@ -126,7 +126,7 @@ input:focus{
 }
 
 .questionFooter .interactive:hover{
-  background-color: #608996;
+  background-color: #6495a4;
 }
 
 .questionFooter .interactive i{
@@ -223,5 +223,5 @@ input:focus{
 }
 
 .subscribe-yellow{
-  color: #f0ad4c;
+  color: #7d9faa;
 }
